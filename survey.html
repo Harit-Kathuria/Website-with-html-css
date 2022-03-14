@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<meta charset="utf-8" />
+	<meta name = "viewport" content="width=device-width, initial-scaale=1" />
+	<style type="text/css">
+		body {
+			background-color: black;
+			text-align: center;
+			color: white;
+		}
+		a {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			background-color: #0099ff;
+		}
+	</style>
+</head>
+<body>
+	<h1>AstroThinkers</h1>
+	<center><form name="AstroFreaks" action="send.php" method="post">
+		<table width="600" border="0" cellspacing="2" cellpadding="1">
+			<tr>
+				<td></td>
+				<td><h3>Astronmy Interests</h3></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="fullname" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td><input type="text" name="age" maxlength="3"</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="male" />Male
+					<input type="radio" name="gender" value="female" />Female
+					<input type="radio" name="gender" value="notosay" />Prefer not to say
+				</td>
+			</tr>
+			<tr>
+				<td>Interests</td>
+				<td><input type="checkbox" name="ints" />StarGazing
+					<input type="checkbox" name="ints" />Night Sky Observation
+					<input type="checkbox" name="ints" />Evening Sky Observation
+					<input type="checkbox" name="ints" />Book Reading
+					<input type="checkbox" name="ints" />Facts about Astronomy
+					<input type="checkbox" name="ints" />Collecting Equipments
+				</td>
+			</tr>
+			<tr>
+				<td>Equipments for Sky Observation</td>
+				<td><select name="eso">
+						<option value="rl">Reflector Telescope</option>
+						<option value="rr">Refractor Telescope</option>
+						<option value="dr">High Definition Camera</option>
+						<option value="bn">Binoculars</option>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="reset" name="reset" value="Reset" />
+					<input type="submit" name="submit" value="Submit" />
+			</tr>
+		</table>
+	</form></center>
+	<h5><a href="file:///D:/project/astrothings.html">BACK TO HOME</a></h5>
+</body>
+</html>
